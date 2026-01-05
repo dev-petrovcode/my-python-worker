@@ -1,14 +1,14 @@
 {
-	"name": "my-python-worker",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"build": "echo \"Python worker — no build needed\"",
-		"deploy": "uv run pywrangler deploy",
-		"dev": "uv run pywrangler dev",
-		"start": "uv run pywrangler dev"
-	},
-	"devDependencies": {
-		"wrangler": "^3.101.0"
-	}
+  "name": "my-python-worker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "deploy": "uv run pywrangler deploy",
+    "dev": "uv run pywrangler dev",
+    "start": "uv run pywrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.101.0"
+  }
 }
